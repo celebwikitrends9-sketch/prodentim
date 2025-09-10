@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProDentim™ (Official) | Supports Healthy Teeth & Gums</title>
+    <meta name="description" content="ProDentim Innovative oral care with 3.5B probiotics. Holistic, toxic-free. Emphasis on safety, quality, and effectiveness, backed by research and testimonials.">
+    <link rel="icon" type="image/png" href="https://ext.same-assets.com/41143994/3138424247.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: #198754;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        .order-btn {
+            background: #ffc107;
+            color: #333 !important;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 700;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 60px 0;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 30px;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .hero-description {
+            font-size: 18px;
+            margin-bottom: 40px;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .price-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hurry-up {
+            color: #dc3545;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .regular-price {
+            color: #6c757d;
+            text-decoration: line-through;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .current-price {
+            color: #dc3545;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background: #ffc107;
+            color: #333;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Section Headers */
+        .section-header {
+            background: #198754;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 32px;
+            font-weight: 700;
+            margin: 60px 0 40px 0;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: 40px 0;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .content-text {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .content-text h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .content-image {
+            text-align: center;
+        }
+
+        .content-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: #f8f9fa;
+            padding: 60px 0;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .testimonial-name {
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .testimonial-location {
+            color: #6c757d;
+            font-size: 14px;
+        }
+
+        /* Badges Section */
+        .badges-section {
+            padding: 60px 0;
+        }
+
+        .badges-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .badge {
+            text-align: center;
+        }
+
+        .badge img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .badge h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .badge p {
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+        /* Benefits */
+        .benefits {
+            background: #f8f9fa;
+            padding: 60px 0;
+        }
+
+        .benefits-content {
+            margin-top: 40px;
+        }
+
+        .benefit-item {
+            margin-bottom: 30px;
+        }
+
+        .benefit-item h4 {
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        /* Pricing */
+        .pricing {
+            padding: 60px 0;
+        }
+
+        .pricing-subtitle {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 40px;
+            color: #198754;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .pricing-card {
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            background: white;
+        }
+
+        .pricing-card.popular {
+            border-color: #ffc107;
+            background: #fffbf0;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: #dc3545;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .package-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #198754;
+        }
+
+        .package-subtitle {
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .package-image {
+            margin: 20px 0;
+        }
+
+        .package-image img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .package-price {
+            font-size: 36px;
+            font-weight: 700;
+            color: #198754;
+            margin-bottom: 5px;
+        }
+
+        .package-price-per {
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
+
+        .package-savings {
+            background: #e7f3ff;
+            color: #0066cc;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        .package-total {
+            color: #6c757d;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .buy-button {
+            background: #ffc107;
+            color: #333;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.3s;
+        }
+
+        .buy-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Rating */
+        .rating {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .stars {
+            color: #ffc107;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Guarantee */
+        .guarantee {
+            background: #198754;
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .guarantee-content {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 30px;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .guarantee-badge {
+            width: 120px;
+            height: 120px;
+        }
+
+        .guarantee-text h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* Ingredients */
+        .ingredients {
+            padding: 60px 0;
+        }
+
+        .ingredient-item {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+            align-items: flex-start;
+        }
+
+        .ingredient-number {
+            background: #198754;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .ingredient-content h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        /* FAQ */
+        .faq {
+            background: #f8f9fa;
+            padding: 60px 0;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            background: white;
+            width: 100%;
+            text-align: left;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            display: none;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content,
+            .content-grid,
+            .guarantee-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .badges-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-text h1 {
+                font-size: 28px;
+            }
+            
+            .section-header {
+                font-size: 24px;
+                padding: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav-container">
+                <div class="logo">ProDentim</div>
+                <ul class="nav-links">
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#pricing">Price</a></li>
+                    <li><a href="#faq">FAQ's</a></li>
+                    <li><a href="https://prodentim24.com/text.php#aff=ismailmemon025" class="order-btn">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="https://assets.cdn.filesafe.space/gdSqvE9s2yZmORuUa4a8/media/65a14e603fd2d1b0d6728d39.png" alt="ProDentim Supplement Bottle">
+                </div>
+                <div class="hero-text">
+                    <h1>ProDentim Official Website</h1>
+                    <p class="hero-description">ProDentim is a scientifically formulated probiotic supplement that focuses on improving oral health. By delivering 3.5 billion live strains combined with vital nutrients, it works to balance the oral microbiome, support gum strength, and enhance dental wellness — all backed by clinical research.</p>
+                    
+                    <div class="price-section">
+                        <div class="hurry-up">HURRY UP!</div>
+                        <div class="regular-price">Regular Price: $99/per bottle</div>
+                        <div class="current-price">Today Only for: $49/per bottle</div>
+                        <a href="https://prodentim24.com/text.php#aff=ismailmemon025" class="cta-button">Claim Your Discount Now 🛒</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is ProDentim Section -->
+    <div class="section-header">What is ProDentim?</div>
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-image">
+                    <img src="https://ext.same-assets.com/41143994/1956720452.jpeg" alt="Happy woman with healthy smile">
+                </div>
+                <div class="content-text">
+                    <p>ProDentim is a probiotic-based oral health formula with 3.5 billion strains and key nutrients. Backed by research, it supports stronger teeth, healthier gums, and long-lasting fresh breath.</p>
+                    
+                    <p>Many traditional dental products contain ingredients that can upset your mouth’s natural balance. ProDentim takes a different approach, replenishing beneficial bacteria to support healthy gums, stronger teeth, and a thriving oral microbiome—backed by the latest scientific research.</p>
+                    
+                    <p>ProDentim doesn’t depend on toothpaste or mouthwash. Just chew it daily to support healthy teeth and gums while protecting your mouth’s natural microbiome.</p>
+                    
+                    <p>ProDentim is backed by rigorous clinical research and user feedback, demonstrating real benefits for gum and tooth health. This innovative formula sets a new benchmark in oral care, focusing on safe and effective results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Does ProDentim Works Section -->
+    <div class="section-header">How Does ProDentim Works?</div>
+    <section class="content-section">
+        <div class="container">
+            <div class="content-text">
+                <p>ProDentim combines 3.5 billion live probiotics with key nutrients to deliver a holistic approach to oral health. This advanced formula works to maintain gum strength, enamel health, and a balanced oral microbiome.</p>
+                
+                <h3>Microbiome Balance:</h3>
+                <p>ProDentim works to restore balance to the oral microbiome, the community of microorganisms in your mouth. Its probiotics replenish good bacteria, supporting healthier gums, teeth, and overall oral wellness.</p>
+                
+                <h3>Toxic-Free Formulation:</h3>
+                <p>Say goodbye to harsh chemicals. ProDentim is crafted without harmful toxins, protecting your oral microbiome and promoting healthier teeth and gums naturally, unlike regular dental products.</p>
+                
+                <h3>Chewing Action:</h3>
+                <p>ProDentim provides an innovative alternative to toothpaste and mouthwash. Chewing it allows its active probiotics to nourish teeth and gums directly, offering full-spectrum oral care naturally.</p>
+                
+                <h3>Clinical Research and Testing:</h3>
+                <p>ProDentim combines science and real results. Clinically tested and trusted by users, it transforms oral care routines, helping you maintain healthier teeth and gums every day.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <div class="section-header">Real ProDentim Users. Real Results That Change Lives.</div>
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="https://ext.same-assets.com/41143994/3335669683.png" alt="Lisa M." class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Lisa M. - New York, USA</div>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>After testing numerous dental products, ProDentim truly impressed me. My gums felt healthier in just a few weeks, brushing no longer caused discomfort, and my breath stayed noticeably fresh throughout the day.</p>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="https://ext.same-assets.com/41143994/3335669683.png" alt="John T." class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">John T. - Los Angeles, USA</div>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>Initially, I had my doubts, but ProDentim completely won me over. My teeth feel exceptionally clean, and I no longer rely on regular toothpaste. It’s now an essential part of my daily oral care.</p>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="https://ext.same-assets.com/41143994/3335669683.png" alt="Emma P." class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Emma P. - Chicago, USA</div>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>ProDentim has become a must-have in our household. Everyone in the family has noticed improvements in their oral health, and knowing it’s safe for kids makes it the perfect choice. We’re proud to be lifelong ProDentim users!</p>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="https://ext.same-assets.com/41143994/3335669683.png" alt="Mike R." class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Mike R. - Miami, USA</div>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>I’ve battled sensitive teeth for years, but ProDentim has really helped. I can enjoy my favorite hot and cold treats without flinching. This product truly delivers!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose ProDentim Section -->
+    <div class="section-header">Why Choose ProDentim?</div>
+    <section class="badges-section">
+        <div class="container">
+            <div class="badges-grid">
+                <div class="badge">
+                    <img src="https://ext.same-assets.com/41143994/3803553964.png" alt="Made in USA">
+                    <h4>Made In USA</h4>
+                    <p>Our formulation of ProDentim is proudly developed and produced in the USA.</p>
+                </div>
+                
+                <div class="badge">
+                    <img src="https://ext.same-assets.com/41143994/3853688853.png" alt="GMP Certified">
+                    <h4>GMP Certified</h4>
+                    <p>Good Manufacturing Practice certified ensure pharmaceutical grade quality.</p>
+                </div>
+                
+                <div class="badge">
+                    <img src="https://ext.same-assets.com/41143994/21742266.png" alt="FDA Approved">
+                    <h4>FDA Approved</h4>
+                    <p>ProDentim is formulated in a FDA registered facility which adheres to strict FDA regulations.</p>
+                </div>
+                
+                <div class="badge">
+                    <img src="https://ext.same-assets.com/41143994/4099033024.png" alt="100% Natural">
+                    <h4>100% Natural</h4>
+                    <p>We are proud to say that ProDentim are All Natural, Non-GMO and Gluten-Free.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <div class="section-header" id="benefits">Benefits of ProDentim</div>
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefit-item">
+                    <h4>Unique Probiotic Blend:</h4>
+                    <p>ProDentim delivers a scientifically designed formulation of 3.5 billion live probiotic strains. These microorganisms are integral in maintaining microbial balance within the oral cavity, thereby supporting periodontal integrity, dental strength, and overall oral health.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <h4>Clinical Research Backing:</h4>
+                    <p>ProDentim is backed by solid clinical research, proving its ability to support healthier gums and stronger teeth—so you can feel confident in every smile.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <h4>No Toxic Ingredients:</h4>
+                    <p>ProDentim skips the harsh chemicals found in regular toothpaste and mouthwash. Instead, it protects your mouth’s natural balance, giving you a safer and healthier way to care for your teeth and gums.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <h4>Holistic Oral Care:</h4>
+                    <p>ProDentim takes care of your smile the natural way. It makes oral care simple—without relying on traditional toothpaste or mouthwash—while giving your teeth and gums the all-around protection they need.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <h4>Independence from Traditional Products:</h4>
+                    <p>With ProDentim, you can care for your teeth without relying on regular toothpaste or mouthwash. It’s a fresh, easy, and safe way to keep your smile healthy.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <h4>Repopulation of Good Bacteria:</h4>
+                    <p>ProDentim is engineered to replenish the oral cavity with beneficial bacterial strains, which are critical for maintaining microbial equilibrium. Current studies underscore the role of these probiotics in promoting periodontal integrity and overall dental health.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <h4>Game-Changing Innovation:</h4>
+                    <p>ProDentim introduces an innovative paradigm in oral health management. Its advanced formulation departs from conventional dental products, providing an evidence-based, proactive approach to supporting optimal periodontal and dental well-being.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <h4>Positive User Testimonials:</h4>
+                    <p>Real users are sharing how ProDentim has transformed their oral health. Their experiences show its benefits firsthand and encourage others to include it in their everyday dental care routine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <div class="section-header" id="pricing">Limited Time Special Pricing - Act Now!</div>
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing-subtitle">Claim Your Exclusive Offer While Stocks Last</div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="package-title">1 X BOTTLE</div>
+                    <div class="package-subtitle">30 Day Supply</div>
+                    <div class="package-image">
+                        <img src="https://en-prodntim.com/assets/images/prodentim-price-2136x1640.webp" alt="1 Bottle ProDentim">
+                    </div>
+                    <div class="package-price">$69</div>
+                    <div class="package-price-per">/Bottle</div>
+                    <div class="package-total">TOTAL: $99 $69</div>
+                    <div style="margin-bottom: 10px;">
+                        <small>✓ FREE Shipping</small>
+                    </div>
+                    <a href="https://prodentim24.com/text.php#aff=ismailmemon025" target="_blank">
+  <button class="buy-button">BUY NOW</button>
+</a>
+
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="popular-badge">BEST VALUE</div>
+                    <div class="package-title">6 X BOTTLES</div>
+                    <div class="package-subtitle">180 Day Supply</div>
+                    <div class="package-image">
+                        <img src="https://en-prodntim.com/assets/images/prodentim-price-2136x1640.webp" alt="6 Bottles ProDentim">
+                    </div>
+                    <div class="package-price">$49</div>
+                    <div class="package-price-per">/Bottle</div>
+                    <div class="package-savings">+ 2 FREE EBOOKS!</div>
+                    <div class="package-total">TOTAL: $594 $294</div>
+                    <div style="margin-bottom: 10px;">
+                        <small>✓ FREE Shipping</small>
+                    </div>
+                     <a href="https://prodentim24.com/text.php#aff=ismailmemon025" target="_blank">
+  <button class="buy-button">BUY NOW</button>
+</a>
+                    </div>
+                
+                <div class="pricing-card">
+                    <div class="popular-badge" style="background: #ff6b6b;">MOST POPULAR</div>
+                    <div class="package-title">3 X BOTTLES</div>
+                    <div class="package-subtitle">90 Day Supply</div>
+                    <div class="package-image">
+                        <img src="https://en-prodntim.com/assets/images/prodentim-price-2136x1640.webp" alt="3 Bottles ProDentim">
+                    </div>
+                    <div class="package-price">$59</div>
+                    <div class="package-price-per">/Bottle</div>
+                    <div class="package-savings">+ 2 FREE EBOOKS!</div>
+                    <div class="package-total">TOTAL: $297 $177</div>
+                    <div style="margin-bottom: 10px;">
+                        <small>✓ FREE Shipping</small>
+                    </div>
+                     <a href="https://prodentim24.com/text.php#aff=ismailmemon025" target="_blank">
+  <button class="buy-button">BUY NOW</button>
+</a>
+                </div>
+            </div>
+            
+            <div class="rating">
+                <div class="stars">★★★★★ 4.92/5</div>
+                <p>Our customers say based on 92,100+ reviews!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses Section -->
+    <div class="section-header">Order 3 Bottles or 6 Bottles and Get 2 FREE Bonuses!</div>
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid" style="margin-bottom: 40px;">
+                <div class="content-image">
+                    <img src="https://ext.same-assets.com/41143994/3014391643.png" alt="Bad Breath Gone Bonus">
+                </div>
+                <div class="content-text">
+                    <h3>BONUS #1</h3>
+                    <h4 style="font-style: italic;">Bad Breath Gone. One Day Detox</h4>
+                    <p><strong>RRP: $109 Today: FREE</strong></p>
+                    <p>ProDentim incorporates seven carefully selected culinary herbs and spices to enhance oral health. These natural components have been shown to support a balanced oral microbiome, while providing a refreshing and flavorful experience for the user.</p>
+                </div>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-image">
+                    <img src="https://ext.same-assets.com/41143994/4045201145.png" alt="Hollywood White Teeth Bonus">
+                </div>
+                <div class="content-text">
+                    <h3>BONUS #2</h3>
+                    <h4 style="font-style: italic;">Hollywood White Teeth at Home</h4>
+                    <p><strong>RRP: $109 Today: FREE</strong></p>
+                    <p>ry the quick and easy 'Bright Teeth' trick that takes just 10 seconds! Plus, discover a secret brushing tip loved by celebrities and people who care about a sparkling smile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee">
+        <div class="container">
+            <h2 style="margin-bottom: 40px; font-size: 32px;">100% Satisfaction Guarantee With 60 Days Of Money Back</h2>
+            <div class="guarantee-content">
+                <img src="https://ext.same-assets.com/41143994/435183754.png" alt="60 Days Money Back Guarantee" class="guarantee-badge">
+                <div class="guarantee-text">
+                    <p>Rest assured with our 60-day 100% money-back guarantee. If you don't see a significant improvement in your gum and teeth health or achieve the Hollywood-star smile you want, contact us within the next 60 days, and we'll refund your entire purchase. Your satisfaction is our top priority.</p>
+                    <a href="https://prodentim24.com/text.php#aff=ismailmemon025" class="cta-button" style="margin-top: 20px; display: inline-block;">Order Now 🛒</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <div class="section-header">ProDentim Ingredients</div>
+    <section class="ingredients">
+        <div class="container">
+            <div class="ingredient-item">
+                <div class="ingredient-number">1</div>
+                <div class="ingredient-content">
+                    <h4>Lactobacillus Paracasei:</h4>
+                    <p>Lactobacillus paracasei is a primary component of ProDentim, selected for its demonstrated ability to support periodontal health and sinus function. By producing lactic acid, this probiotic helps maintain oral microbial balance and inhibits pathogenic bacteria, reducing the risk of gingival inflammation and bleeding. Additionally, evidence indicates it contributes to overall immune system support, reinforcing its role in ProDentim’s comprehensive formulation.</p>
+                </div>
+            </div>
+            
+            <div class="ingredient-item">
+                <div class="ingredient-number">2</div>
+                <div class="ingredient-content">
+                    <h4>B.lactis BL-04®:</h4>
+                    <p>B.lactis BL-04® is a clinically validated probiotic in ProDentim, recognized for its ability to maintain oral microbial balance. It counteracts disruptions caused by diet, stress, or medications, supporting periodontal health and reducing the risk of gingival inflammation and oral infections. Additionally, this strain contributes to respiratory tract function and overall immune system support, underscoring its role in ProDentim’s comprehensive oral and systemic wellness formulation.</p>
+                </div>
+            </div>
+            
+            <div class="ingredient-item">
+                <div class="ingredient-number">3</div>
+                <div class="ingredient-content">
+                    <h4>Lactobacillus Reuteri</h4>
+                    <p>Lactobacillus reuteri is a key probiotic in ProDentim, recognized for its role in sustaining oral microbial balance. Its anti-inflammatory properties help mitigate gingival and periodontal irritation, while its ability to stimulate antimicrobial agent production effectively controls pathogenic bacteria, reducing the risk of dental caries, gum inflammation, and oral infections.</p>
+                </div>
+            </div>
+            
+            <div class="ingredient-item">
+                <div class="ingredient-number">4</div>
+                <div class="ingredient-content">
+                    <h4>Inulin:</h4>
+                    <p>Inulin, extracted from chicory root, serves as a prebiotic fiber in ProDentim, selectively promoting the growth of beneficial oral bacteria. This activity helps establish a microbial barrier against pathogenic bacteria linked to halitosis, gingivitis, and other oral conditions. In addition to its oral health benefits, inulin contributes to digestive regulation, inflammation reduction, glycemic control, and provides a natural dietary fiber source. ProDentim incorporates high-quality, non-GMO inulin, ensuring a safe and additive-free formulation.</p>
+                </div>
+            </div>
+            
+            <div class="ingredient-item">
+                <div class="ingredient-number">5</div>
+                <div class="ingredient-content">
+                    <h4>Malic Acid:</h4>
+                    <p>Malic acid, a naturally occurring compound in fruits and vegetables like strawberries, is incorporated in ProDentim for its enamel-safe teeth-whitening properties. It aids in removing extrinsic stains while inhibiting the proliferation of pathogenic oral bacteria, thereby reducing the risk of dental caries and periodontal issues. This naturally derived acid provides a non-toxic approach to maintaining optimal oral health.</p>
+                </div>
+            </div>
+            
+            <div class="ingredient-item">
+                <div class="ingredient-number">6</div>
+                <div class="ingredient-content">
+                    <h4>Tricalcium Phosphate:</h4>
+                    <p>Tricalcium Phosphate, a naturally occurring mineral in dairy products such as milk, cheese, and yogurt, is included in ProDentim to support optimal dental and skeletal health. It provides a bioavailable source of calcium, reinforcing tooth enamel, reducing susceptibility to decay, and promoting healthy gums, while contributing to proper nerve and muscle function.</p>
+                </div>
+            </div>
+            
+            <div class="ingredient-item">
+                <div class="ingredient-number">7</div>
+                <div class="ingredient-content">
+                    <h4>Peppermint</h4>
+                    <p>Peppermint, incorporated in ProDentim, exhibits significant anti-inflammatory and antimicrobial properties, supporting periodontal health and oral hygiene. Its bioactive oils reduce gingival inflammation and inhibit pathogenic bacterial growth, lowering the risk of gum disease and other oral conditions. Additionally, the natural cooling effect provides a soothing sensation, enhancing overall oral comfort. In combination with probiotics and other natural ingredients, peppermint contributes to comprehensive oral wellness and breath freshness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <div class="section-header" id="faq">ProDentim Frequently Asked Questions</div>
+    <section class="faq">
+        <div class="container">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Is ProDentim safe for daily use?</button>
+                <div class="faq-answer">
+                    <p>ProDentim is specifically formulated for safe, daily administration, offering a clinically supported approach to oral health maintenance. Its combination of probiotics and essential nutrients is designed to enhance dental and periodontal wellness without causing adverse effects.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">How long does it take to see results with ProDentim?</button>
+                <div class="faq-answer">
+                    <p>Everyone’s results are a little different, but many people notice healthier teeth and gums within a few weeks of using ProDentim. For the best benefits, make it part of your daily routine for 60–90 days.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Can ProDentim replace my regular toothpaste?</button>
+                <div class="faq-answer">
+                    <p>ProDentim works alongside your regular oral care routine, giving your teeth and gums extra probiotic support. For the best results, it’s a good idea to check with your dentist about the oral care routine that’s right for you.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Are there any side effects associated with ProDentim?</button>
+                <div class="faq-answer">
+                    <p>ProDentim is composed of natural ingredients and is generally well-tolerated. As with any dietary supplement, initial mild gastrointestinal responses may occur. Individuals with pre-existing health conditions or concerns are advised to seek guidance from a healthcare professional prior to use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Disclaimer</a>
+                <a href="#">Terms</a>
+            </div>
+            
+            <p>This information is meant to guide you, but it’s not a replacement for professional medical advice. Be sure to talk to your doctor about any lifestyle changes, and consult them with any questions or concerns about your health.</p>
+            
+            <p style="margin-top: 20px;">The claims presented on this website have not been evaluated by the U.S. Food and Drug Administration. The products referenced are not intended for the diagnosis, treatment, cure, or prevention of any medical condition. Individuals who are pregnant, nursing, taking medications, or managing health conditions should consult a licensed healthcare professional prior to use. All website content and product information are based on the author’s opinion and are provided solely on an 'AS IS' and 'AS AVAILABLE' basis.</p>
+            
+            <p style="margin-top: 20px;">© Copyright 2023 ProDentim.com All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const isOpen = answer.style.display === 'block';
+            
+            // Close all FAQ answers
+            document.querySelectorAll('.faq-answer').forEach(ans => {
+                ans.style.display = 'none';
+            });
+            
+            // Open clicked answer if it wasn't open
+            if (!isOpen) {
+                answer.style.display = 'block';
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
